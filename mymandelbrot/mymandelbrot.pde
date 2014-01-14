@@ -67,7 +67,7 @@ void draw() {
 
         int red    = (int)(mouseX * scaleWidthToColor);
         int green  = n*16 % 255;
-        int blue   = 0;
+        int blue   = (int)(mouseY * scaleWidthToColor);
 
         pixels[i+j*width] = color(red, green, blue);
       }
